@@ -1,0 +1,113 @@
+div{
+    display: inline-block;
+}
+
+#oscilloscope{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 650px;
+    height: 600px;
+}
+
+#instruction{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    background-color: green;
+    margin-bottom: 5px;
+}
+
+#input{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;   
+}
+
+#output{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: plum;    
+}
+
+canvas {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;    
+    width: 300px;
+    height: 240px;
+    border: 3px solid black; 
+    margin: 5;  
+
+} 
+
+#screen {  
+    background-color: black; 
+    width: 300px;
+    height: 240px;
+    border: 3px solid black;
+}
+
+#gIControllPanel{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:bisque;
+    border: 3px solid black;
+    width: 70%;    
+}
+
+#oControllPanel{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:bisque;
+    border: 3px solid black;
+    width: 70%;        
+}
+
+#on{
+    background-color: grey;
+    color: #000;
+    width: 49%;
+}
+
+#off{
+    background-color: red;
+    color: #fff;
+    width: 49%;
+}
+
+#scan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#diode{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+input[name="diode"] {    
+    transform: scale(1.5);        
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    font-size: 15pt;
+    margin: 0px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Oscilloscope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="instruction">
+      <p>Верхня розгортка - сигнал Х1 на вході Вх1;</p>
+      <p>Нижня розгортка - сигнал Y на вході Вх2;</p>
+      <p>
+        Логічна функція НЕ -
+        <em>Y = <span style="text-decoration: overline">X1</span></em>
+      </p>
+      <p>Частота на генераторі імпульсів - <span id="X"></span></p>
+    </div>
+    <div id="oscilloscope">
+      <div id="input">
+        <h3>Генератор імпульсів</h3>
+        <canvas id="scheme" width="300" height="240"
+          >Error!!! Your browser does not support canvas.</canvas
+        >
+        <div id="gIControllPanel">
+          <label
+            >Частота (Гц)
+            <input
+              type="text"
+              required
+              size="15"
+              placeholder="0.0"
+              id="frequency" /></label
+          ><br />
+          <hr />
+          <input type="button" id="on" value="ON" />
+          <input type="button" id="off" value="OFF" />
+        </div>
+      </div>
+      <div id="output">
+        <h3>Осцилограф</h3>
+        <canvas id="screen" width="300" height="240"
+          >Error!!! Your browser does not support canvas.</canvas
+        >
+        <div id="oControllPanel">
+          <div id="scan">
+            <input type="radio" id="choice1" name="scan" value="6" checked />
+            <label for="choice1">6 с</label>
+            <input type="radio" id="choice2" name="scan" value="3" />
+            <label for="choice2">3 с</label>
+            <input type="radio" id="choice3" name="scan" value="1.5" />
+            <label for="choice3">1,5 с</label>
+          </div>
+          <hr />
+          <span id="diode"></span>
+          <input type="radio" id="diodeOn" name="diode" onclick="onOscilloscope()"/>
+          <label for="diodeOn">ON</label>
+          <input type="radio" id="diodeOff" name="diode" onclick="offOscilloscope()" checked />
+          <label for="diodeOff">OFF</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
